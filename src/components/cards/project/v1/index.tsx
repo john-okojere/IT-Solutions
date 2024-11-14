@@ -1,5 +1,5 @@
 import { ImageProps } from '@/src/common-types';
-import { CustomLink } from '@/src/components/custom-link';
+// import { CustomLink } from '@/src/components/custom-link';
 import { BREAKPOINTS } from '@/src/themes/interface';
 import { cn } from '@/src/utils/shadcn';
 import Image from 'next/image';
@@ -11,7 +11,7 @@ export interface PortfolioCardProps {
   description: string;
 }
 export function ProjectCard({
-  slug,
+  // slug,
   image,
   title,
   description,

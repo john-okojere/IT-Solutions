@@ -1,21 +1,21 @@
 import { footerSectionData } from '@/data/layout/footer/v2';
-import { ImageProps, LinkProps, SectionProps } from '@/src/common-types';
+import { LinkProps, SectionProps } from '@/src/common-types';
 import { Container } from '@/src/components/container';
 import { CustomLink } from '@/src/components/custom-link';
 import { cn } from '@/src/utils/shadcn';
-import Image from 'next/image';
+// import Image from 'next/image';
 import { BrandLogo } from 'src/layout/brand-logo';
 import { FaEnvelope, FaPhone } from 'react-icons/fa6';
 import { FaMapMarkerAlt } from 'react-icons/fa';
-import { FaCalendarDays } from 'react-icons/fa6';
+// import { FaCalendarDays } from 'react-icons/fa6';
 import { ClassValue } from 'clsx';
 
-interface RecentBlog {
-  slug: string;
-  image: Omit<ImageProps, 'width' | 'height'>;
-  date: string;
-  title: string;
-}
+// interface RecentBlog {
+//   slug: string;
+//   image: Omit<ImageProps, 'width' | 'height'>;
+//   date: string;
+//   title: string;
+// }
 
 interface SocialLinkProps {
   icon: React.ReactNode;
@@ -32,10 +32,10 @@ export interface FooterSectionProps {
     title: string;
     links: LinkProps[];
   };
-  columnThree: {
-    title: string;
-    blogs: RecentBlog[];
-  };
+  // columnThree: {
+  //   title: string;
+  //   blogs: RecentBlog[];
+  // };
   columnFour: {
     title: string;
     location: string;
@@ -72,7 +72,7 @@ export function Footer({ className, footerTopClassName }: Props) {
     socialLinks,
     columnOne,
     columnTwo,
-    columnThree,
+    // columnThree,
     columnFour,
     footerBottom,
   } = footerSectionData;

@@ -1,8 +1,8 @@
 import { ImageProps, blurDataUrl } from '@/src/common-types';
-import { CustomLink } from '@/src/components/custom-link';
+// import { CustomLink } from '@/src/components/custom-link';
 import { cn } from '@/src/utils/shadcn';
 import Image from 'next/image';
-import { FaArrowRightLong } from 'react-icons/fa6';
+// import { FaArrowRightLong } from 'react-icons/fa6';
 
 export interface ServiceProps {
   image: Omit<ImageProps, 'width' | 'height'>;
@@ -17,7 +17,7 @@ export function ServiceCard({
   icon,
   title,
   description,
-  slug,
+  // slug,
 }: ServiceProps) {
   return (
     <article

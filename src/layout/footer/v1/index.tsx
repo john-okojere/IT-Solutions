@@ -3,7 +3,7 @@ import { ImageProps, LinkProps, SectionProps } from '@/src/common-types';
 import { Container } from '@/src/components/container';
 import { CustomLink } from '@/src/components/custom-link';
 import { cn } from '@/src/utils/shadcn';
-import Image from 'next/image';
+// import Image from 'next/image';
 import { BrandLogo } from 'src/layout/brand-logo';
 import {
   FaChevronRight,
@@ -11,7 +11,7 @@ import {
   FaPaperPlane,
   FaPhone,
 } from 'react-icons/fa6';
-import { FaCalendarDays } from 'react-icons/fa6';
+// import { FaCalendarDays } from 'react-icons/fa6';
 
 interface RecentBlog {
   slug: string;
@@ -66,7 +66,7 @@ const textColor = cn(
 );
 
 export function Footer({ className }: SectionProps) {
-  const { about, columnOne, columnTwo, columnThree, footerBottom } =
+  const { about, columnOne, columnTwo, footerBottom } =
     footerSectionData;
   return (
     <footer
